@@ -1,0 +1,95 @@
+* {
+    margin: 0 0 0 5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    font-family: Arial, sans-serif;
+}
+
+.author {
+    font-family: Arial, sans-serif;
+    background-color: #e7e5f5;
+}
+
+header {
+    margin-top: 15px;
+    text-align: center;
+    background-color: #dcd6f8;
+    color: black;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+section {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 30%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+div {
+    float: left;
+    margin-left: 10px;
+}
+
+h3 {
+    font-size: 22px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+p {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+p b {
+    font-weight: bold;
+}
+
+.catBanner {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.catBanner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
