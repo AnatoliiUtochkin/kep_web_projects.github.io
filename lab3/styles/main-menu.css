@@ -8,6 +8,7 @@
 
 .site-nav .site-nav-item {
 	border-bottom: 1px solid mediumvioletred;
+	padding: 5px;
 }
 
 .site-nav .site-nav-item:last-child {
@@ -15,7 +16,7 @@
 }
 
 .site-nav .site-nav-item a {
-	color: white;
+	color: aliceblue;
 	text-decoration: none;
 }
 
