@@ -187,3 +187,7 @@ html {
     margin-left: 30px;
     font-size: 24px;
 }
+
+.right-side-ul {
+    list-style-type: none;
+}
