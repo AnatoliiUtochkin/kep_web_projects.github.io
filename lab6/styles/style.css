@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: auto;
+}
+
+body {
+    background-color: rgb(110, 78, 57);
+}
+
+main {
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    padding: 20px 30px;
+}
+
+img {
+    height: 100%;
+    overflow: hidden;
+    max-width: 500px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+main > * {
+    text-align: center;
+}
+
+h3,
+.price {
+    font-family: Rubik;
+    font-weight: 500;
+}
+
+.price {
+    color: rgb(93, 93, 93);
+}
+
+.side-part {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+}
+
+.yellow-highlight {
+    color: yellow;
+}
+
+.top-caption {
+    font-size: 1.3em;
+}
+
+.page-wrapper {
+    width: 100%;
+    max-width: 1900px;
+}
+
+.menu-wrapper {
+    height: 400px;
+}
+
+.menu-list {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 75px;
+}
+
+.menu-item {
+    position: relative;
+    display: inline-block;
+    width: 35%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.menu-item:nth-child(2n-1) {
+    margin-right: 50px;
+}
+
+.menu-item::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    display: block;
+    width: 100%;
+    border: solid #979797 1px;
+}
+
+.menu-item::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 10px;
+    height: 10px;
+    rotate: -45deg;
+    background-color: #979797;
+}
+
+.item-name {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.button {
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    width: 150px;
+    height: 50px;
+    font-size: 1.2em;
+    background-color: black;
+    color: #fff;
+    font-family: Rubik;
+    margin: 20px 0;
+}
+
+.inner-button {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.advert {
+    margin: 50px auto 0;
+    position: relative;
+    width: 70%;
+    min-width: 600px;
+}
+
