@@ -133,16 +133,16 @@ article:last-child {
 
 #gallery .container {
     display: flex;
+    width: 75%;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    width: 940px;
     margin: 0 auto;
     padding-bottom: 50px;
 }
 
 .photo img {
-    flex: 1 0 calc(33.333% - 10px);
+    flex: 0 0 calc(33.33% - 10px);
     height: 300px;
     width: 300px;
     object-fit: cover;
@@ -400,10 +400,6 @@ footer li {
         flex-wrap: wrap;
     }
 
-    .photo img {
-        width: 33.3%;
-    }
-
     footer .container {
         display: flex;
         justify-content: space-around;
@@ -466,7 +462,7 @@ footer li {
     }
 
     #gallery .container {
-        width: 65%;
+        width: 60%;
         flex-wrap: wrap;
         justify-content: center;
     }
