@@ -138,7 +138,6 @@ article:last-child {
     gap: 20px;
     width: 940px;
     margin: 0 auto;
-    flex-wrap: wrap;
     padding-bottom: 50px;
 }
 
