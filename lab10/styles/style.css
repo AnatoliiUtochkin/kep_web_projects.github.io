@@ -1,0 +1,481 @@
+/* Основні стилі */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+header > .container {
+    background: url("../images/jumbotron.jpg") center -30px / 110% no-repeat;
+    height: 350px;
+    text-align: center;
+}
+
+#top-bar .container {
+    display: flex;
+    justify-content: end;
+    width: 60%;
+    height: 60px;
+    margin: 0 auto;
+}
+
+#top-bar .container li {
+    display: inline-block;
+    padding: 15px 5px;
+}
+
+#top-bar a {
+    font-size: .9em;
+    color: #ACACAC;
+}
+
+.project-name {
+    line-height: 60px;
+    margin-right: auto;
+    color: #528EB5;
+    font-size: 1.2em;
+}
+
+h1 {
+    padding: 75px;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+.button {
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 0 auto;
+    border-radius: 25px;
+    background: #FA5BA5;
+    color: #FFFFFF;
+}
+
+h2, h3 {
+    font-weight: 600;
+    color: #959595;
+}
+
+h2 {
+    color: #000000;
+    font-size: 1.7em;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+#services .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 75px;
+}
+
+.services-item {
+    width: 300px;
+    text-align: center;
+    color: #B8B8B8;
+}
+
+.service-icon {
+    height: 64px;
+    width: 64px;
+    margin: 0 auto 20px;
+}
+
+#blog {
+    background-color: #FCFCFC;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+article {
+    display: flex;
+    width: 75%;
+    margin: 30px auto;
+}
+
+article img {
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 15px;
+}
+
+.blog-heading {
+    padding: 20px 0;
+}
+
+.blog-date {
+    color: #3F3E3E;
+    padding-bottom: 15px;
+    font-size: .8em;
+}
+
+.blog-text {
+    color: #3F3E3E;
+    font-size: .9em;
+}
+
+article:last-child {
+    padding-bottom: 20px;
+}
+
+#gallery .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 940px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.photo img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+footer {
+    padding: 30px 0;
+    background-color: #38404B;
+    text-align: center;
+}
+
+.gray {
+    color: #B7C5D8;
+}
+
+footer li {
+    display: inline-block;
+    padding: 20px 5px;
+}
+
+.footer-title {
+    font-size: 1.3em;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: .8em;
+}
+
+/* Маленькі телефони */
+@media only screen and (max-width: 576px) {
+    header > .container {
+        background-size: cover;
+        height: 200px;
+    }
+
+    #top-bar .container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #top-bar .container li {
+        padding: 8px;
+    }
+
+    #top-bar .container li:last-child {
+        margin-right: 15px;
+    }
+
+    .project-name {
+        margin-left: 15px;
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 30px;
+        padding: 40px;
+    }
+
+    .button {
+        padding: 12px 20px;
+        font-size: 0.8em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    #services .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .services-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .service-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    article {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    article img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .blog-heading {
+        padding: 10px 0;
+    }
+
+    .blog-date,
+    .blog-text {
+        font-size: 0.7em;
+    }
+
+    #gallery .container {
+        width: 90%;
+    }
+
+    .photo img {
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+
+    .footer-title {
+        font-size: 1em;
+    }
+
+    footer li {
+        padding: 8px 5px;
+    }
+
+    .copyright {
+        font-size: 0.6em;
+    }
+}
+
+/* Планшети */
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
+    header > .container {
+        background-size: cover;
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 40px;
+        padding: 60px;
+    }
+
+    .button {
+        padding: 16px 26px;
+        font-size: 0.9em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .services-item {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+
+    .service-icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    article {
+        width: 80%;
+    }
+
+    .blog-heading {
+        padding: 15px 0;
+    }
+
+    .blog-date,
+    .blog-text {
+        font-size: 0.8em;
+    }
+
+    #gallery .container {
+        width: 100%;
+    }
+
+    .photo img {
+        width: auto;
+    }
+
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-title {
+        margin-left: 15px;
+    }
+
+    footer li {
+        padding: 12px 8px;
+    }
+
+    .copyright {
+        font-size: 0.7em;
+        margin-right: 15px;
+    }
+}
+
+/* Невеликі ноутбуки та великі планшети */
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+    header > .container {
+        background-size: cover;
+        height: 280px;
+    }
+
+    h1 {
+        font-size: 45px;
+        padding: 70px;
+    }
+
+    .button {
+        padding: 18px 28px;
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+        padding-top: 55px;
+        padding-bottom: 35px;
+    }
+
+    .services-item {
+        width: 40%;
+        margin-bottom: 35px;
+    }
+
+    .service-icon {
+        height: 54px;
+        width: 54px;
+    }
+
+    article {
+        width: 90%;
+    }
+
+    .blog-heading {
+        padding: 18px 0;
+    }
+
+    .blog-date,
+    .blog-text {
+        font-size: 0.9em;
+    }
+
+    #gallery .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer li {
+        padding: 14px 10px;
+    }
+
+    .copyright {
+        font-size: 0.8em;
+    }
+}
+
+/* Великі ноутбуки, десктопи та великі екрани */
+@media only screen and (min-width: 1367px) {
+    header > .container {
+        background-size: cover;
+        height: 350px;
+    }
+
+    h1 {
+        font-size: 50px;
+        padding: 80px;
+    }
+
+    .button {
+        padding: 20px 30px;
+        font-size: 1.1em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+        padding-top: 70px;
+        padding-bottom: 45px;
+    }
+
+    .services-item {
+        width: 30%;
+        margin-bottom: 40px;
+    }
+
+    .service-icon {
+        height: 64px;
+        width: 64px;
+    }
+
+    article {
+        width: 90%;
+    }
+
+    .blog-heading {
+        padding: 22px 0;
+    }
+
+    .blog-date,
+    .blog-text {
+        font-size: 1em;
+    }
+
+    #gallery .container {
+        width: 70%;
+    }
+
+    footer .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer li {
+        padding: 16px 12px;
+    }
+
+    .copyright {
+        font-size: 0.9em;
+    }
+}
