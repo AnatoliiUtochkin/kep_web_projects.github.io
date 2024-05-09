@@ -400,6 +400,10 @@ footer li {
         flex-wrap: wrap;
     }
 
+    .photo img {
+        width: 33.3%;
+    }
+
     footer .container {
         display: flex;
         justify-content: space-around;
@@ -462,7 +466,9 @@ footer li {
     }
 
     #gallery .container {
-        width: 70%;
+        width: 65%;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     footer .container {
